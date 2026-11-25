@@ -1,0 +1,256 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #ffffff;
+    color: #111111;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.site-header {
+    padding: 16px 0;
+    background-color: #ffffff;
+}
+
+.header-inner {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+}
+
+.logo-link {
+    justify-self: start;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo-img {
+    width: 92px;
+    height: 92px;
+    object-fit: contain;
+    display: block;
+}
+
+.main-nav {
+    justify-self: center;
+    display: flex;
+    align-items: center;
+    gap: 42px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #111111;
+    font-size: 16px;
+    font-weight: 400;
+    transition: color 0.2s ease;
+}
+
+    .nav-link:hover {
+        color: #7c93ad;
+    }
+
+    .nav-link.active {
+        color: #7c93ad;
+    }
+
+.home-main {
+    padding: 120px 0 80px;
+}
+
+.home-grid {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.home-info {
+    flex: 1;
+    max-width: 490px;
+    padding-top: 22px;
+    padding-left: 24px;
+}
+
+.greeting {
+    font-size: 16px;
+    color: #111111;
+    margin-bottom: 8px;
+}
+
+.bio-text {
+    font-size: 16px;
+    line-height: 1.65;
+    color: #111111;
+}
+
+.socials-title {
+    margin-top: 46px;
+    margin-bottom: 18px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #111111;
+}
+
+.socials-list {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.social-btn {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-decoration: none;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+    .social-btn:hover {
+        transform: translateY(-2px);
+        opacity: 0.9;
+    }
+
+.social-fb {
+    background-color: #3b5998;
+}
+
+.social-x {
+    background-color: #000000;
+}
+
+.social-ig {
+    background-color: #c53686;
+}
+
+.home-media {
+    flex: 1;
+    max-width: 530px;
+}
+
+.hero-image {
+    width: 100%;
+    height: 335px;
+    object-fit: cover;
+    display: block;
+}
+
+@media (max-width: 900px) {
+    .main-nav {
+        gap: 24px;
+    }
+
+    .home-main {
+        padding: 60px 0;
+    }
+
+    .home-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home-info {
+        padding-left: 0;
+        padding-top: 0;
+        max-width: 100%;
+    }
+
+    .home-media {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .header-inner {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .main-nav {
+        gap: 20px;
+    }
+
+    .hero-image {
+        height: 240px;
+    }
+}
+
+.tasks-main {
+    padding: 60px 0 80px;
+    text-align: center;
+}
+
+.tasks-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.tasks-subtitle {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+.rates-table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    font-size: 15px;
+    text-align: center;
+}
+
+    .rates-table th,
+    .rates-table td {
+        border: 1px solid #111111;
+        padding: 10px 14px;
+    }
+
+.team-main {
+    padding: 60px 0 80px;
+    text-align: center;
+}
+
+.team-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+.team-list {
+    list-style: none;
+    display: inline-block;
+    text-align: left;
+    font-size: 16px;
+    line-height: 2;
+}
+
+    .team-list a {
+        color: #111111;
+        text-decoration: underline;
+        transition: color 0.2s ease;
+    }
+
+        .team-list a:hover {
+            color: #7c93ad;
+        }
